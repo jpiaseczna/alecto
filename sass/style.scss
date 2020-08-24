@@ -1,0 +1,32 @@
+/* Variables */
+
+$font-header: 'Myriad Pro', sans-serif;
+$font-text: 'Raleway', sans-serif;
+$color-main: #17daa3;
+$color-text: #87949e;
+$transition: all 1s;
+
+/* Global */
+
+*, *::before, *::after {
+        box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-size: 16px;
+   line-height: 1.7;
+   font-family: $font-text;
+   background-color: $color-background;
+   color: $color-text;
+}
+
+.container {
+   max-width: 1140px;
+   padding: 0 20px;
+   margin: 0 auto;
+}
+
+.section {
+    padding: 96px 0;
+}
