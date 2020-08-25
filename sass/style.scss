@@ -17,7 +17,6 @@ body {
    font-size: 16px;
    line-height: 1.7;
    font-family: $font-text;
-   background-color: $color-background;
    color: $color-text;
 }
 
@@ -27,6 +26,114 @@ body {
    margin: 0 auto;
 }
 
+.row {
+  display: flex;
+}
+
 .section {
     padding: 96px 0;
+}
+
+/* Splash */
+
+.splash {
+    height: 100vh;
+    background-image: url('https://i.postimg.cc/nhzhkcwv/splash.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.splash .container {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.logo {
+  font-family: $font-header;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 30px;
+  color: #fff;
+  position: absolute;
+  right: 80%;
+}
+
+.logo .dot {
+  color: $color-main;
+}
+
+nav {
+  position: absolute;
+  left: 50%;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: row;
+  margin: 20px;
+  color: #fff;
+}
+
+.navigation ul li {
+  margin: 20px;
+  }
+
+.navigation ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: $font-header;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navigation form i {
+  color: #fff;
+}
+
+.navigation form i:hover {
+  cursor: pointer;
+}
+
+.splash-inner {
+  margin: 0 auto;
+  align-items: center;
+  max-width: 70%;
+  color: #fff;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.splash-inner h1 {
+  font-family: $font-header;
+  font-size: 52px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+.splash-inner h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.splash-inner span {
+  font-weight: 700;
+}
+
+.splash-inner .btn {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 24px;
+  border: 2px solid #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 30px;
+  margin-top: 30px;
 }
